@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Yehyun's Portfolio</title>
+    <link rel="stylesheet" href="coding.css">
+    <link rel="stylesheet" href="aos.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hyeonnp2656.github.io/Portfolio/">
+    <meta property="og:title" content="김예현의 포트폴리오">
+    <meta property="og:image" content="img/og.png">
+    <meta property="og:description" content="Design is inside me, I AM A DESIGNER.">
+  </head>
+  <body>
+    <header>
+        <nav>
+          <div class="logo">
+            <a onclick="fnMove('6')"><img src="img/logo.png" alt="logo"></a>
+          </div>
+          <div class="nav">
+            <ul>
+              <li><a onclick="fnMove('1')">ABOUT ME</a></li>
+              <li><a onclick="fnMove('2')">PACKAGE</a></li>
+              <li><a onclick="fnMove('3')">EDITIONAL</a></li>
+              <li><a onclick="fnMove('4')">ADVERTISE</a></li>
+              <li><a onclick="fnMove('5')">CI</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <section class="main">
+      <div class="bg" id="anchor6">
+        <div class="bg_text" data-aos="fade-down">
+          <img src="img/bg_text.png" alt="bg_text" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1500">
+        </div>
+      </div>
+      <div class="title" id="anchor1">
+        <img class="top_a" src="img/about_tx.png" alt="about_me" data-aos="fade-down" data-aos-duration="1000">
+      </div>
+      <div class="about_me">
+        <div class="a1">
+          <img class="banner" src="img/about.png" alt="about" data-aos="fade-down" data-aos-duration="1000">
+        </div>
+        <div class="a2">
+          <img class="banner" src="img/my_skills.png" alt="skills" data-aos="fade-right" data-aos-duration="1000">
+        </div>
+      </div>
+
+
+      <div class="title" id="anchor2">
+        <img src="img/package_tx.png" alt="package" data-aos="fade-down" data-aos-duration="1000">
+      </div>
+      <div class="package">
+        <div class="motion">
+          <div class="screen">
+            <a href="sub1.html">
+              <div class="top">See More</div>
+              <img class="banner" src="img/package.png" alt="package" data-aos="fade-down" data-aos-duration="1000">
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="title" id="anchor3">
+          <img src="img/editorial_tx.png" alt="editorial" data-aos="fade-down" data-aos-duration="1000">
+      </div>
+      <div class="editional">
+        <div class="motion">
+          <div class="screen">
+            <a href="">
+              <div class="top">See More</div>
+              <img class="banner" src="img/editional.png" alt="editional" data-aos="fade-down" data-aos-duration="1000">
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="title" id="anchor4">
+          <img src="img/advertising_tx.png" alt="advertise" data-aos="fade-down" data-aos-duration="1000">
+      </div>
+      <div class="advertise">
+        <div class="motion">
+          <div class="screen">
+            <a href="">
+              <div class="top">See More</div>
+              <img class="banner" src="img/ad_2.png" alt="advertise" data-aos="fade-down" data-aos-duration="1000">
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="title" id="anchor5">
+          <img src="img/ci_tx.png" alt="ci" data-aos="fade-down" data-aos-duration="1000">
+      </div>
+      <div class="ci">
+        <div class="motion">
+          <div class="screen">
+            <a href="">
+              <div class="top">See More</div>
+              <img class="banner" src="img/ci_1.png" alt="ci" data-aos="fade-down" data-aos-duration="1000">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      Copyright 2021 Yehyun, Kim. All rights Reserved.
+    </footer>
+      <script src="aos.js"></script>
+      <script>AOS.init();</script>
+      <script type="text/javascript" src="jquery-latest.js"></script>
+      <script>function fnMove(seq)
+      {var offset = $("#anchor" + seq).offset();
+      $('html, body').animate({scrollTop: offset.top},500);}
+      </script>
+  </body>
+</html>
