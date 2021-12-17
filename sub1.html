@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Yehyun's Portfolio</title>
+    <link rel="stylesheet" href="coding.css">
+    <link rel="stylesheet" href="aos.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+        <nav>
+          <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+          </div>
+          <div class="nav">
+            <ul>
+              <li><a href="index.html">ABOUT ME</a></li>
+              <li><a onclick="fnMove('1')">PACKAGE</a></li>
+              <li><a href="sub2.html">EDITIONAL</a></li>
+              <li><a href="sub3.html">ADVERTISE</a></li>
+              <li><a href="sub4.html">CI</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <section class="sub1" id="anchor1">
+      <div class="bg_sub1">
+        <div class="bg_text" data-aos="fade-down">
+          <img src="img/sub1bg_tx.png" alt="bg_text" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1500">
+        </div>
+      </div>
+      <div class="title_1">
+        <img src="img/pack1_t.png" alt="package" data-aos="fade-down" data-aos-duration="1000">
+      </div>
+      <div class="package_1">
+        <div class="p1" data-aos="fade-down" data-aos-duration="1000">
+          2019 블루 어워드 입선작
+        </div>
+        <img src="img/pack_1.png" alt="package" data-aos="fade-down" data-aos-duration="1000">
+      </div>
+    </section>
+    <footer class="footer">
+      Copyright 2021 Yehyun, Kim. All rights Reserved.
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+      <script src="aos.js"></script>
+      <script>AOS.init();</script>
+      <script type="text/javascript" src="jquery-latest.js"></script>
+      <script>function fnMove(seq)
+      {var offset = $("#anchor" + seq).offset();
+      $('html, body').animate({scrollTop: offset.top},500);}
+      </script>
+  </body>
+</html>
